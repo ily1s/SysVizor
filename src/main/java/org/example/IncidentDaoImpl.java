@@ -21,7 +21,7 @@ public class IncidentDaoImpl implements Incident.incidentDao {
             ps.setString(2, i.getStatus());
             ps.setTime(3, i.getTime());
             if (ps.executeUpdate() == 1) {
-                System.out.println("Membre inserted successfully");
+                System.out.println("Incident inserted successfully");
             }
         }
     }
